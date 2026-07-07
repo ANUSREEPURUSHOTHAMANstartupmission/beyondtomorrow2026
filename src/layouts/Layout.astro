@@ -1,0 +1,103 @@
+---
+const { title } = Astro.props;
+
+// import Navbar from "../components/Navbar.svelte";
+
+const description = "Kerala Startup Mission is the central agency of the Government of Kerala for entrepreneurship development and incubation activities in Kerala, India.";
+const url = "https://startupmission.kerala.gov.in/";
+ 
+import "../assets/css/style.css"
+import "../assets/css/responsive.css"
+
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/x-icon" href="/img/Fav icon.svg" class="w-14 h-14  md:w-28 md:h-28" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Work+Sans:wght@600&display=swap">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="stylesheet" href="https://events.startupmission.in/css/base.css">
+		<link rel="stylesheet" href="https://events.startupmission.in/css/agenda.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js" is:inline></script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" is:inline></script>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/assets/css/all.min.css">
+        <link rel="stylesheet" href="/assets/css/flaticon.css">
+        <link rel="stylesheet" href="/assets/css/animate.min.css">
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="/assets/css/slick.css">
+        <link rel="stylesheet" href="/assets/css/color.css">
+
+<style>
+	@font-face {font-family: "GiorgioSans-Bold";
+	src: url("/fonts/giorgio/3744d23a5fa29385168833eee4190625.eot"); /* IE9*/
+	src: url("/fonts/giorgio/3744d23a5fa29385168833eee4190625.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("/fonts/giorgio/3744d23a5fa29385168833eee4190625.woff2") format("woff2"), /* chrome、firefox */
+	url("/fonts/giorgio/3744d23a5fa29385168833eee4190625.woff") format("woff"), /* chrome、firefox */
+	url("/fonts/giorgio/3744d23a5fa29385168833eee4190625.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("/fonts/giorgio/3744d23a5fa29385168833eee4190625.svg#GiorgioSans-Bold") format("svg"); /* iOS 4.1- */
+}
+
+</style>
+
+		<meta name="generator" content={Astro.generator} />
+		
+		<title>{title}</title>
+
+		<!-- Primary Meta Tags -->
+		<meta name="title" content={title} >
+		<meta name="description" content={description}>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content={url}>
+		<meta property="og:title" content={title}>
+		<meta property="og:description" content={description}>
+		<meta property="og:image" content={url + 'img/fb_image.jpg'}>
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content={url}>
+		<meta property="twitter:title" content={title}>
+		<meta property="twitter:description" content={description}>
+		<meta property="twitter:image" content={url + 'img/fb_image.jpg'}>
+
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" is:inline></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" is:inline></script>
+
+	</head>
+	<body>
+		<!-- <Navbar client:load></Navbar> -->
+
+		<div class="cursor"></div>
+<div class="cursor2"></div>
+		<slot />
+		<script is:inline>
+			AOS.init();
+		  </script>
+	</body>
+
+	<script src="/assets/js/jquery.min.js" is:inline></script>
+	<script src="/assets/js/popper.min.js" is:inline></script>
+	<script src="/assets/js/bootstrap.min.js" is:inline></script>
+	<script src="/assets/js/wow.min.js" is:inline></script>
+	<script src="/assets/js/counterup.min.js" is:inline></script>
+	<script src="/assets/js/jquery.downCount.js" is:inline></script>
+	<script src="/assets/js/jquery.fancybox.min.js" is:inline></script>
+	<script src="/assets/js/perfect-scrollbar.min.js" is:inline></script>
+	<script src="/assets/js/slick.min.js" is:inline></script>
+	<script src="/assets/js/custom-scripts.js" is:inline></script>
+</html>

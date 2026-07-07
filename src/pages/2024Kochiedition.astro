@@ -1,0 +1,1606 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Track from '../components/Track.svelte';
+import Speakers from '../components/Speakerskochi.svelte';
+import Bg from '../components/Bg.astro';
+import Schedule from '../components/Schedule.svelte';
+import Countdown from '../components/Countdown.svelte';
+import Faq from '../components/Faqdata.astro';
+
+import Goals from '../components/Goals.astro';
+import Navbar from "../components/Navbarkochi.svelte";
+
+
+---
+
+<Layout  title="Beyond Tomorrow" class="" >
+  <Navbar client:load></Navbar>
+
+ <div class=" relative">
+   
+<!-- <Bg></Bg> -->
+
+<main class=" relative py-24 min-h-screen flex flex-col items-center justify-center overflow-x-clip" id="home" >
+ 
+  <div id="default-carousel" class="absolute  items-center  justify-center  bg-cover bg-center  bg-no-repeat w-full h-full top-0 left-0 " data-carousel="slide">
+    <div class=" flex items-center justify-center mx-auto text-white px-2">
+      <div class=" z-30  items-center mx-auto absolute bottom-10 flex justify-between w-full container font-data">
+        <div class=" text-xl md:text-2xl  cursor-scale smalll flex gap-3 items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+          Le Méridien, Kochi
+        </div>
+        <div  class="md:flex hidden items-center justify-center text-center cursor-scale">
+          <!-- <p class=" text-white">Event registration is now closed</p> -->
+          <!-- <a class="px-4 py-3 text-2xl border border-[#3650a5] bg-[#3650a5] text-white btn-style500  items-center justify-center text-center" href="https://zfrmz.com/ONBEWTfHlQdnJvrSLxDB" target="_blank">Request an Invite</a> -->
+        </div>
+        <div class="text-xl md:text-2xl  px-10 cursor-scale smalll">
+          July 20, 2024
+        </div>
+      </div>
+    </div>
+    <div class=" min-h-screen overflow-hidden relative ">
+			<div class="hidden duration-700  transition-none" data-carousel-item>
+				
+				<div class="relative min-h-screen">
+					
+					<div class="absolute -z-20 bg-cover bg-center bg-no-repeat w-full h-full top-0 flex  left-0 " style="background-image:url('/img/education.png')"></div>  
+
+					<div class=" z-50 w-full min-h-screen  container mx-auto text-white flex flex-col  space-y-6  md:pt-10">
+						
+            <div class=" justify-between flex md:flex-row flex-col md:items-center gap-4">
+							<img src="/img/2024btwhitelogo.svg" class=" md:w-[100] cursor-scale   pt-5">
+
+              <div>
+                  <img src="/img/logoksumficci.svg" class=" md:w-52 w-40 cursor-scale">
+              </div>
+						</div>
+
+						<div class=" md:w-2/3 w-full">
+							<div class=" font-data text-xl md:text-2xl  cursor-scale smalll">
+								<span class="font-bold">Education </span><br>Strategies for integrating arts and culture into educational curricula and specialized training programs to build a skilled talent pool.
+                <div>
+                  <!-- <Countdown date="2025-06-28T09:00" client:load></Countdown> -->
+                </div>
+              </div>
+						</div>
+            
+          
+					</div>
+					
+
+				</div>
+			</div>
+			<div class="hidden duration-700  transition-none my-auto" data-carousel-item>
+				<div class="relative min-h-screen">
+				<div class="absolute -z-20 bg-cover bg-center bg-no-repeat w-full h-full top-0 flex my-auto left-0 " style="background-image:url('/img/55.png')"></div>  
+
+        <div class=" z-50 w-full min-h-screen  container mx-auto text-white flex flex-col  space-y-6  md:pt-10">
+						
+          <div class=" justify-between flex md:flex-row flex-col md:items-center gap-4">
+            <img src="/img/2024btwhitelogo.svg" class=" md:w-[100] cursor-scale  pt-5">
+
+            <div>
+                <img src="/img/logoksumficci.svg" class=" md:w-52 w-40 cursor-scale">
+            </div>
+          </div>
+
+          <div class=" md:w-2/3 w-full">
+            <div class=" font-data text-xl md:text-2xl  cursor-scale smalll">
+              <span class="font-bold">Tourism</span> <br>Exploring how cultural heritage can boost tourism and act as a catalyst for economic development.
+              <!-- <Countdown date="2025-06-28T09:00" client:load></Countdown> -->
+
+            </div>
+
+          </div>
+
+          <!-- <div class=" absolute bottom-10 flex justify-between w-full container font-data">
+            <div class=" text-xl md:text-2xl  cursor-scale smalll flex gap-3 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-7">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+              Le Meridien, Kochi
+            </div>
+            <div  class=" items-center justify-center text-center cursor-scale">
+              <a class="px-4 py-3 text-2xl border border-[#3650a5] btn-style500  items-center justify-center text-center" href="https://forms.startupmission.in/keralastartupmission/form/RequestanInviteBeyondTomorrow/formperma/onB_zbTsiLSAygmhD1HZe7QHE1JMFWQJRLo0dPC9YbA" target="_blank">Request an Invite</a>
+            </div>
+            <div class="text-xl md:text-2xl px-10 cursor-scale smalll">
+              July 20, 2024
+            </div>
+          </div> -->
+        </div>
+        
+				</div>
+			</div>
+			<div class="hidden duration-700  transition-none my-auto" data-carousel-item>
+				<div class="relative min-h-screen">
+					
+					<div class="absolute -z-20 bg-cover bg-center bg-no-repeat w-full h-full top-0 flex my-auto left-0 " style="background-image:url('/img/m.png')"></div>  
+
+          <div class=" z-50 w-full min-h-screen  container mx-auto text-white flex flex-col  space-y-6  md:pt-10">
+						
+					  <div class=" justify-between flex md:flex-row flex-col md:items-center gap-4">
+							<img src="/img/2024btwhitelogo.svg" class=" md:w-[100] cursor-scale  pt-5">
+
+              <div>
+                  <img src="/img/logoksumficci.svg" class=" md:w-52 w-40 cursor-scale">
+              </div>
+						</div>
+
+						<div class=" md:w-2/3 w-full">
+							<div class=" font-data text-xl md:text-2xl  cursor-scale smalll">
+								<span class="font-bold">Technology</span> <br>Delving into the impact of digital integration, artificial intelligence, and emerging technologies on the arts.
+                <!-- <Countdown date="2025-06-28T09:00" client:load></Countdown> -->
+
+              </div>
+
+						</div>
+
+						<!-- <div class=" absolute bottom-10 flex justify-between w-full container font-data">
+							<div class=" text-xl md:text-2xl  cursor-scale smalll flex gap-3 items-center justify-center">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+                Le Meridien, Kochi
+							</div>
+              <div  class=" items-center justify-center text-center cursor-scale">
+                <a class="px-4 py-3 text-2xl border border-[#3650a5] btn-style500  items-center justify-center text-center" href="https://forms.startupmission.in/keralastartupmission/form/RequestanInviteBeyondTomorrow/formperma/onB_zbTsiLSAygmhD1HZe7QHE1JMFWQJRLo0dPC9YbA" target="_blank">Request an Invite</a>
+              </div>
+							<div class="text-xl md:text-2xl px-10 cursor-scale smalll">
+								July 20, 2024
+							</div>
+						</div> -->
+					</div>
+					
+				</div>
+			</div>			
+		</div>
+	</div>
+	
+</main>
+
+ </div>
+
+<div class=" flex items-center justify-center bg-[#f8dfce3a]">
+	<h1 class=" md:text-4xl text-2xl px-10 text-center justify-center items-center pt-24 pb-10 md:w-2/3 w-full text-black  font-bold font-data">
+		Join us for a day of insightful discussions and networking opportunities as we envision a vibrant future for <span class=" text-[#591CBC] cursor-scale">Kerala's creative economy</span>
+
+    <!-- <div class="pb-24 ">
+      <div  class=" md:hidden pt-6 flex items-center justify-center text-center cursor-scale">
+        <a class="px-4 py-3 text-2xl border border-[#3650a5] btn-style500  items-center justify-center text-center" href="https://forms.startupmission.in/keralastartupmission/form/RequestanInviteBeyondTomorrow/formperma/onB_zbTsiLSAygmhD1HZe7QHE1JMFWQJRLo0dPC9YbA" target="_blank">Request an Invite</a>
+      </div>
+    </div> -->
+	</h1>
+</div>
+
+
+  
+
+
+	
+  <div>
+   
+    <section id="about" class="pt-10">
+        <div class="w-100  pb-120 position-relative">
+            <div class="container">
+                <div class="sec-title mb-20 w-100 text-center">
+                    <div class="sec-title-inner d-inline-block">
+                        <i class=""></i>
+                        <span class="d-block thm-clr"></span>
+                        <!-- <h2 class="mb-0">About</h2> -->
+                    </div>
+                </div>
+                <div class="about-wrap w-100">
+                    <div class=" items-center justify-center">
+                       
+                        <div class="">
+                            <div class="about-desc w-100">
+                                <p class="mb-0 text-justify cursor-scale smalll">
+                                  Kerala Startup Mission (<span class=" font-semibold">KSUM</span>), in collaboration with  Federation of Indian Chambers of Commerce & Industry (<span class=" font-semibold">FICCI</span>), invites you to the <span class="text-[#591CBC]">"Beyond Tomorrow"</span> conference on July 20, 2024, at kochi. This event is designed to explore the future of Kerala’s cultural and creative sectors and their potential to drive economic and social growth.
+                                </p>
+                                <p class="text-justify pt-1 cursor-scale smalll">
+                                 Beyond Tomorrow will feature a series of presentations and panel discussions led by industry experts. The conference will highlight the crucial role of the creative sector in fostering innovation, advancing technology, and promoting sustainable practices.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="">
+                          <div class="about-img w-100">
+                              <div class="about-img-caro">
+                                  <div class="about-img-item"><img class="img-fluid w-100" src="/img/about.png" alt="About Image 1"></div>
+                              </div>
+                          </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section>
+        <div class="w-100 position-relative">
+            <img class="img-fluid shp1 right rotate-anim revs position-absolute" src="assets/images/shp1.png" alt="Shap 1">
+            <img class="img-fluid shp2 right rotate-anim position-absolute" src="assets/images/shp2.png" alt="Shap 2">
+            <img class="img-fluid shp3 right rotate-anim revs position-absolute" src="assets/images/shp3.png" alt="Shap 3">
+            <div class="reason-wrap w-100">
+                <div class="row mrg align-items-center">
+                    <div class="col-md-6 col-sm-12 col-lg-6">
+                        <div class="reason-img w-100">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="reason-img1">
+                                    <img class="img-fluid w-100" src="/img/1710352569037 1.png" alt="Reason Image 1">
+                                </div>
+                                <div class="tab-pane fade" id="reason-img2">
+                                    <img class="img-fluid w-100" src="assets/images/resources/reason-img2.jpg" alt="Reason Image 2">
+                                </div>
+                                <div class="tab-pane fade" id="reason-img3">
+                                    <img class="img-fluid w-100" src="assets/images/resources/reason-img3.jpg" alt="Reason Image 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-6">
+                        <div class="reason-desc w-100">
+                            <div class="reason-desc-inner">
+                                <div class="sec-title mb-25 w-100 cursor-scale">
+                                    <div class="sec-title-inner pt-0 d-inline-block cursor-scale">
+                                        <span class="d-block thm-clr ">Why Attend</span>
+                                    </div>
+                                    <p class="mb-0 text-2xl">
+                                      Beyond Tomorrow offers a unique platform to
+                                    </p>
+                                </div>
+                              
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item "><a class="nav-link active text-justify text-xl py-6 pl-4 flex gap-5" data-toggle="tab" ><span><div class=" w-4 h-4 bg-white flex border border-[#11A24A] rounded-full"></div></span>Gain insights from industry leaders and innovators</a></li>
+                                    <li class="nav-item"><a class="nav-link  text-justify text-xl py-6 pl-4 flex gap-5" data-toggle="tab" ><span><div class=" w-4 h-4 bg-white flex border-2 border-[#11A24A] rounded-full"></div></span>Explore the intersection of culture, education, tourism, and technology</a></li>
+                                    <li class="nav-item"><a class="nav-link  text-justify text-xl py-6 pl-4 flex gap-5" data-toggle="tab" ><span><div class=" w-4 h-4 bg-white flex border-2 border-[#11A24A] rounded-full"></div></span>Network with professionals and stakeholders from various sectors</a></li>
+                                    <li class="nav-item"><a class="nav-link  text-justify text-xl py-6 pl-4 flex gap-5" data-toggle="tab" ><span><div class=" w-4 h-4 bg-white flex border-2 border-[#11A24A] rounded-full"></div></span>Discover how the creative economy can drive sustainable growth and innovation</a></li>
+                                    <li class="nav-item"><a class="nav-link  text-justify text-xl py-6 pl-4 flex gap-5" data-toggle="tab" ><span><div class=" w-4 h-4 bg-white flex border-2 border-[#11A24A] rounded-full"></div></span>Whether you are an educator, policymaker, entrepreneur, or creative professional, this conference will provide valuable perspectives and opportunities to contribute to Kerala's future</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Reason Wrap -->
+        </div>
+    </section>
+
+ 
+    <section class="" id="updates">
+        <div class="w-100 md:pt-24 pb-24 position-relative">
+            <div class="container">
+                <div class="cursor-scale newsletter-wrap md:w-2/3 w-full items-center justify-center text-center flex flex-col mx-auto">
+                    <h3 class="mb-0  md:text-3xl text-2xl font-normal">Stay tuned for upcoming announcements on our exciting event schedule and <span class=" text-[#11A24A]">speakers</span>, featuring keynote speeches, <span class=" text-[#11A24A]">panel discussions</span>, and <span class=" text-[#11A24A]">networking</span> sessions with leading voices from the cultural, educational, tourism, and technology sectors</h3>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pb-24 flex-col" id="Speakers">
+      <div class="sec-title-inner pt-0 d-inline-block">
+        <h4 class="mb-0 pb-16 text-2xl">Speakers</h4>
+      </div>
+      <div>
+        <Speakers client:load></Speakers>
+      </div>
+    </section>
+
+    <!-- <section class="  pt-24  flex-col bg-[#0f0834]" id="Schedule">
+        <div class=" container">
+          <div class="sec-title-inner pt-0 d-inline-block">
+            <h4 class="mb-0 pb-16 text-2xl text-white">Tentative Schedule</h4>
+          </div>
+          <div>
+            <Schedule client:load></Schedule>
+          </div>
+        </div>
+    </section> -->
+
+
+   
+
+    <!-- <section class=" pt-64">
+        <div class="w-100 pb-120 gray-layer opc9 position-relative">
+            <div class="fixed-bg patern-bg" style="background-image: url(assets/images/patter-bg1.jpg);"></div>
+            <div class="container">
+                <div class="discount-wrap w-100 position-relative" style="background-image: url('/img/high-angle-variety-arrows-with-copy-space.jpg');">
+                    <div class="discount-inner d-inline-block">
+                        <h2 class="mb-0 text-white">Interested in attending?</h2>
+                        <p class="mb-0 text-white">Click here to request an invitation. We look forward to welcoming you to this transformative event.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <a class="thm-btn fill-btn bg-white"  href="https://forms.startupmission.in/keralastartupmission/form/RequestanInviteBeyondTomorrow/formperma/onB_zbTsiLSAygmhD1HZe7QHE1JMFWQJRLo0dPC9YbA" target="_blank" title="">Request an Invite<i class="flaticon-trajectory"></i><span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section>
+      <div class="w-100 pb-24 pt-24 position-relative">
+          <div class="container">
+              <div class="sponsors-wrap w-100">
+                  <div class="flex flex-col ">
+                      <div class="md:w-1/2 w-full">
+                          <div class="sec-title mb-40 w-100">
+                              <div class="sec-title-inner pt-0 d-inline-block">
+                                  <!-- <h3 class="mb-0">Partners & Sponsors</h3> -->
+                                  <span class="d-block thm-clr">This event is proudly supported by</span>
+
+                              </div>
+                          </div>
+                      </div>
+                    
+                     <div class=" grid sm:grid-cols-4 grid-cols-1">
+                        <div class="md:w-3/4 w-1/2">
+                            <div class=" border-0 text-center mb-30 w-100">
+                                <a title=""><img class="img-fluid" src="/img/ksum.png" alt="Sponsor Image 3"></a>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4 w-1/2">
+                            <div class=" text-center mb-30 w-100">
+                                <a title=""><img class="img-fluid" src="/img/ficci.png" alt="Sponsor Image 4"></a>
+                            </div>
+                        </div>
+                       
+                     </div>
+                      <div class="md:w-1/2 w-full pt-24">
+                        <div class="sec-title w-100">
+                            <div class="sec-title-inner pt-0 d-inline-block">
+                                <h4 class="mb-0 text-2xl">Past Partners</h4>
+                            </div>
+                        </div>
+                      </div>
+                     <div class=" pt-4 grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2  gap-6 ">
+                          <div>
+                            <img src="/img/taos.png">
+                          </div>
+                          <div>
+                              <img src="/img/unesco.png">
+                          </div>
+                          <div>
+                            <img src="/img/teamwork.png">
+                          </div>
+                          <div>
+                            <img src="/img/saik.png">
+                          </div>
+                          <div>
+                            <img src="/img/avid.png">
+                          </div>
+                          <div>
+                            <img src="/img/art.png">
+                          </div>
+                          <div>
+                            <img src="/img/britishcouncil.png">
+                          </div>
+                          <div>
+                            <img src="/img/gtech.png">
+                          </div>
+                          
+                          <div>
+                            <img src="/img/tie.png">
+                          </div>
+                          
+                     </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+    <footer id="contact">
+        <div class="w-100 pt-120 blue-layer opc1 position-relative">
+            <div class="fixed-bg back-blend-multiply bg-color4"></div>
+            <div class="container position-relative">
+                <!-- <div class="clrs-wrap d-flex position-absolute">
+                    <i class="bg-color6"></i>
+                    <i class="bg-color7"></i>
+                    <i class="bg-color8"></i>
+                    <i class="bg-color9"></i>
+                    <i class="bg-color10"></i>
+                    <i class="bg-color11"></i>
+                </div> -->
+                <div class="footer-wrap w-screen  flex md:flex-row flex-col justify-between">
+                    <div class="footer-inner d-inline-block md:w-1/2 w-full">
+                        <div class="logo d-inline-block"><h1 class="mb-0"><a href="/" title=""><img class="img-fluid pr-5" src="/img/2024btwhitelogo.svg" alt="Logo"></a></h1></div>
+                       
+                        <p class="mb-0"><a href="/" title=""></a>Copyright 2024 <a href="https://startupmission.kerala.gov.in/" target="_blank" title="">KSUM</a></p>
+                    </div>
+                    <div class="footer-bottom border-0 items-center my-auto d-flex flex-wrap flex flex-col  md:w-1/2 w-full ">
+                        <p class="mb-0"><i class="thm-clr rounded-circle fas fa-envelope-open w-8 h-8"></i><a><span class="text-white text-xl font-semibold">nasif@startupmission.in</span></a></p>
+                        <div class="social-links d-inline-flex  text-center items-center justify-center mt-3  w-8 h-8 flex">
+                            <a class="facebook rounded-circle w-8 h-8 flex items-center justify-center text-center mx-auto my-auto" href="https://www.facebook.com/keralastartupmission" title="Facebook" target="_blank"><i class="fab fa-facebook-f text-center items-center justify-center   w-8  h-8"></i></a>
+                            <a class="twitter rounded-circle w-8 h-8" href="https://x.com/startup_mission" title="Twitter" target="_blank"><i class="fab fa-twitter w-8 h-8 "></i></a>
+                            <a class="instagram rounded-circle w-8 h-8" href="" title="Instagram" target="_blank"><i class="fab fa-instagram w-8 h-8"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </div>
+</Layout>
+<script is:inline>
+	function faq1(d, div_id,bt_c,bt_t) {
+	 
+	  for (let element of document.getElementsByClassName("divcls")) {
+		element.style.display = "none";
+	  }
+      for (let element of document.getElementsByClassName("btnt")) {
+		element.style.display = "none";
+	  }
+	  for (let element of document.getElementsByClassName("main_div")) {
+		element.style.border = "thin solid #e5e7eb";
+	  }
+      for (let element of document.getElementsByClassName("btn")) {
+		element.style.display = "flex";
+	  }
+	  document.getElementById(div_id).style.display = "flex";
+	  document.getElementById(d).style.border = "thin solid #4b9e37";
+      document.getElementById(bt_t).style.display = "flex";
+      document.getElementById(bt_c).style.display = "none";
+  
+	}
+  </script>
+
+
+<script is:inline>
+	function faq2(d, div_id,bt_c,bt_t) {
+	 
+	  for (let element of document.getElementsByClassName("divcls1")) {
+		element.style.display = "none";
+	  }
+      for (let element of document.getElementsByClassName("btnt1")) {
+		element.style.display = "none";
+	  }
+	  for (let element of document.getElementsByClassName("main_div1")) {
+		element.style.border = "thin solid #e5e7eb";
+	  }
+      for (let element of document.getElementsByClassName("btn1")) {
+		element.style.display = "flex";
+	  }
+	  document.getElementById(div_id).style.display = "flex";
+	  document.getElementById(d).style.border = "thin solid #4b9e37";
+      document.getElementById(bt_t).style.display = "flex";
+      document.getElementById(bt_c).style.display = "none";
+  
+	}
+  </script>
+
+
+<style>
+	.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+</style>
+
+<style is:global>
+	@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 70s linear infinite;
+}
+</style>
+
+<style>
+	/* CSS to style the animated elements */
+[data-aos] {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+</style>
+
+
+<script is:inline>
+// Function to animate the count-up effect for multiple numbers
+function animateValues() {
+  const countElements = document.querySelectorAll('.count');
+
+  countElements.forEach((countElement) => {
+    const start = parseInt(countElement.getAttribute('data-start'));
+    const end = parseInt(countElement.getAttribute('data-end'));
+    const duration = 6000; // Duration for each count-up animation
+
+    animateValue(countElement, start, end, duration);
+  });
+}
+
+// Function to animate the count-up effect
+function animateValue(element, start, end, duration) {
+  const range = end - start;
+  const increment = end > start ? 1 : -1;
+  const frameDuration = Math.abs(Math.floor(duration / range));
+  let current = start;
+
+  const animate = () => {
+    current += increment;
+    element.textContent = current;
+
+    if ((increment > 0 && current < end) || (increment < 0 && current > end)) {
+      setTimeout(animate, frameDuration);
+    }
+  };
+
+  animate();
+}
+
+// Call the animateValues function to start the animation
+animateValues();
+
+
+</script>
+<style is:global lang="scss">
+	.button{
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 45px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 2px solid #ef5e5e;
+    transition: all 2s ease;
+
+    &:hover{
+      color: #fff;
+      position: relative;
+      z-index: 1;
+
+      &::before{
+        left: 0%;
+        right: auto;
+        width: 100%;
+        z-index: -1;
+      }
+
+      &::after{
+
+      }
+    }
+
+    &::before{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      height: 100%;
+      width: 0px;
+      content: '';
+      background: #ef5e5e;
+      transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      height: 0%;
+      left: 50%;
+      top: 50%;
+      width: 150%;
+      transition: all 0.75s ease 0s;
+    }
+  }
+
+</style>
+
+
+<style is:global>
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  border: 2px solid #800000;
+  transition: 0.3s;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1000;
+}
+.cursor2 {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.grow,
+.grow-smalll {
+  transform: scale(4);
+  background: #13457485;
+  mix-blend-mode: difference;
+  border: none;
+}
+
+.grow-smalll {
+  transform: scale(2);
+}
+
+</style>
+<script is:inline>
+let cursor = document.querySelector(".cursor");
+let cursor2 = document.querySelector(".cursor2");
+let cursorScale = document.querySelectorAll(".cursor-scale");
+let mouseX = 0;
+let mouseY = 0;
+
+gsap.to({}, 0.016, {
+  repeat: -1,
+  onRepeat: function () {
+    gsap.set(cursor, {
+      css: {
+        left: mouseX,
+        top: mouseY
+      }
+    });
+    gsap.set(cursor2, {
+      css: {
+        left: mouseX,
+        top: mouseY
+      }
+    });
+  }
+});
+
+window.addEventListener("mousemove", (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+cursorScale.forEach((link) => {
+  link.addEventListener("mousemove", () => {
+    cursor.classList.add("grow");
+    if (link.classList.contains("smalll")) {
+      cursor.classList.remove("grow");
+      cursor.classList.add("grow-smalll");
+    }
+  });
+
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove("grow");
+    cursor.classList.remove("grow-smalll");
+  });
+});
+
+</script>
+
+
+<style lang="scss">
+	@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+$background: #fafbff;
+$button-width: 120px;
+$border-radius: 5px;
+
+.buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.updating {
+  margin: 3em;
+  text-align: center;
+}
+
+// button style
+
+.btn-style1 {
+  $btn-color: #979695;
+  $btn-hover-color: #5e5e5e;
+  position: relative;
+  border-color: $btn-color;
+  color: $btn-color;
+  &:hover {
+    transform: translateY(-0.25em);
+    border-color: $btn-hover-color;
+    color: $btn-hover-color;
+    &::before {
+      opacity: 1;
+    }
+  }
+  &::before {
+    width: 100%;
+    height: 1em;
+    position: absolute;
+    left: 0;
+    bottom: -1.35em;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0) 80%
+    );
+    opacity: 0;
+    transition: all 0.65s;
+    content: "";
+  }
+}
+
+.btn-style2 {
+  $btn-color: #dd7e2a;
+  $btn-hover-color: #b5c952;
+  border-color: $btn-color;
+  color: $btn-color;
+  &:hover {
+    box-shadow: 0 0.25em 0.25em -0.1em $btn-hover-color;
+    transform: translateY(-0.25em);
+    border-color: $btn-hover-color;
+    color: $btn-hover-color;
+  }
+}
+
+.btn-style3 {
+  $btn-color: #979695;
+  $btn-hover-color: #5e5e5e;
+  border-color: $btn-color;
+  color: $btn-color;
+  &:hover {
+    transform: translateY(-0.25em);
+    box-shadow: 0 0 0.5em 0em $btn-hover-color;
+    border-color: $btn-hover-color;
+    color: $btn-hover-color;
+  }
+}
+
+.btn-style4 {
+  $btn-color: #716eef;
+  $btn-hover-color: #dd648a;
+  border-color: $btn-color;
+  color: $btn-color;
+  &:hover {
+    box-shadow: inset 0 0 0.55em 0em $btn-hover-color;
+    border-color: $btn-hover-color;
+    color: $btn-hover-color;
+  }
+}
+
+.btn-style5 {
+  $btn-color: #979695;
+  $btn-hover-color: #dd6395;
+  $offset: 0.3em;
+  border-color: $btn-color;
+  color: $btn-color;
+  box-shadow: $offset $offset 0 $btn-hover-color;
+  &:hover {
+    box-shadow: (-$offset) (-$offset) 0 $btn-color;
+    background-color: $btn-hover-color;
+    border-color: $btn-hover-color;
+    color: #fff;
+  }
+}
+
+.btn-style500 {
+  $btn-color: #716eef;
+  border-color: $btn-color;
+  color: $btn-color;
+  &:hover {
+    color: #fff;
+    transition-delay: 0.2s;
+    animation: ani500 0.6s forwards;
+    background: radial-gradient(circle, $btn-color 0.2em, transparent 0.3em) 6em
+        6em/1em 1em,
+      radial-gradient(circle, $btn-color 0.2em, transparent 0.3em) 0 0/1em 1em;
+  }
+}
+@keyframes ani500 {
+  100% {
+    background-size: 2.375em 2.375em, 0.1em 0.1em;
+  }
+}
+
+.btn-style501 {
+  $btn-color: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  background-image: $btn-color;
+  background-size: 200% auto;
+  background-position: left top;
+  border-color: transparent;
+  color: #464646;
+  &:hover {
+    background-position: right bottom;
+    color: #000;
+  }
+}
+
+.btn-style502 {
+  $btn-color1: #716eef;
+  $btn-color2: #fbb8a9;
+  $btn-gradient: #c15b44;
+  border-color: $btn-color1;
+  color: #fff;
+  background: repeating-linear-gradient(
+    40deg,
+    $btn-color1 0%,
+    $btn-color1 5%,
+    $btn-color2 5%,
+    $btn-gradient 10%
+  );
+  text-shadow: 1px 1px 0em #000;
+  &:hover {
+    background-position: 120px;
+    text-shadow: 2px 2px 0.2em #000;
+  }
+}
+
+.btn-style503 {
+  $btn-color: #dd6395;
+  $btn-hover-color: #dd7e2a;
+  border-color: $btn-color;
+  color: $btn-color;
+  transition: all 0.5s;
+  &:hover {
+    box-shadow: inset 5em 0 0 0 $btn-hover-color,
+      inset -5em 0 0 0 $btn-hover-color;
+    border-color: $btn-hover-color;
+    color: #fff;
+  }
+}
+
+.btn-style504 {
+  $btn-color: #dd7e2a;
+  $btn-hover-color: #dd648a;
+  border-color: $btn-color;
+  color: $btn-color;
+  transition: all 0.5s;
+  &:hover {
+    box-shadow: inset 0 1.5em 0em 0em $btn-hover-color,
+      inset 0 -1.5em 0em 0em $btn-hover-color;
+    border-color: $btn-hover-color;
+    color: #fff;
+  }
+}
+
+.btn-style505 {
+  $btn-color: #716eef;
+  $btn-hover-color: #dd648a;
+  border-color: $btn-color;
+  color: $btn-color;
+  transition: all 0.5s;
+  &:hover {
+    box-shadow: inset 0 0 0 2em $btn-hover-color;
+    border-color: $btn-hover-color;
+    color: #fff;
+  }
+}
+
+.btn-style506 {
+  $btn-color: #dd7e2a;
+  position: relative;
+  border-color: $btn-color;
+  color: $btn-color;
+  overflow: hidden;
+  &::before {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: $btn-color;
+    transform: rotateZ(-45deg) translate(-50%, -50%);
+    transition: all 0.3s;
+    content: "";
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    &::before {
+      width: 100%;
+      top: 0;
+      transform: none;
+    }
+  }
+}
+
+.btn-style507 {
+  $btn-color: #dd6395;
+  position: relative;
+  border-color: $btn-color;
+  color: $btn-color;
+  overflow: hidden;
+  &::before {
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $btn-color;
+    transform: rotateZ(-45deg) translate(-50%, -50%);
+    transition: all 0.3s;
+    content: "";
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    transition-delay: 0.35s;
+    // background-color:$btn-color;
+    &::before {
+      animation: ani507 0.6s forwards;
+    }
+  }
+}
+@keyframes ani507 {
+  10% {
+    width: 0;
+    transform: rotateZ(-45deg) translate(-100%, -50%);
+  }
+  20% {
+    width: 0;
+    transform: rotateZ(0) translate(-100%, 85%);
+  }
+  60% {
+    width: 100%;
+    transform: rotateZ(0) translate(0, 85%);
+  }
+  100% {
+    width: 100%;
+    transform: rotateZ(0) translate(0, 0);
+  }
+}
+
+.btn-style508 {
+  $btn-color: #5e5e5e;
+  $btn-hover-color: #117831;
+  position: relative;
+  border-color: $btn-color;
+  color: $btn-color;
+  overflow: hidden;
+  &::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: $border-radius;
+    transform: translate(-100%, 0) rotate(50deg);
+    transform-origin: top left;
+    transition: all 0.35s;
+    background-color: $btn-hover-color;
+    z-index: -1;
+    content: "";
+  }
+  &:hover {
+    color: #fff;
+    border-color: $btn-hover-color;
+    &::before {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.btn-style509 {
+  $btn-color: #716eef;
+  $btn-hover-color: #4b48cb;
+  position: relative;
+  background-color: $btn-color;
+  border-color: $btn-color;
+  color: #fff;
+  &::before,
+  &::after {
+    width: 49px;
+    height: 35px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $btn-hover-color;
+    transition: all 1s ease;
+    transform: scale(0);
+    content: "";
+    z-index: -1;
+  }
+  &::before {
+    top: -8px;
+    left: 10%;
+  }
+  &::after {
+    bottom: -8px;
+    right: 15%;
+  }
+  &:hover {
+    background-color: $btn-hover-color;
+    border-color: $btn-hover-color;
+    &::before,
+    &::after {
+      transform: scale(1);
+    }
+  }
+}
+
+.btn-style510 {
+  $btn-color: #5e5e5e;
+  $btn-hover-color: #dd6395;
+  position: relative;
+  background-color: $btn-color;
+  border-color: $btn-color;
+  color: #fff;
+  overflow: hidden;
+  &::before,
+  &::after {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100px) skewX(-15deg);
+    content: "";
+  }
+  &::before {
+    width: 60px;
+    background: rgba(255, 255, 255, 0.5);
+    filter: blur(30px);
+    opacity: 0.5;
+  }
+  &::after {
+    width: 30px;
+    left: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    filter: blur(5px);
+  }
+  &:hover {
+    background-color: $btn-hover-color;
+    border-color: $btn-hover-color;
+    &::before {
+      opacity: 1;
+    }
+    &::before,
+    &::after {
+      transform: translateX(300px) skewX(-15deg);
+      transition: all 0.9s ease;
+    }
+  }
+}
+
+.btn-style511 {
+  $btn-color: transparent;
+  $btn-hover-color: #dd6395;
+  position: relative;
+  border-color: $btn-color;
+  background-color: $btn-color;
+  color: #484848;
+  overflow: hidden;
+  span {
+    position: relative;
+    z-index: 2;
+  }
+  &::before,
+  &::after {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    background-color: $btn-hover-color;
+    transition: all 0.25s;
+    content: "";
+    z-index: 1;
+  }
+  &::before {
+    top: 0;
+    transform: translate(-100%, 0);
+  }
+  &::after {
+    bottom: 0;
+    transform: translate(100%, 0);
+  }
+  &:hover {
+    color: #fff;
+    &::before,
+    &::after {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.btn-style700 {
+  $btn-color: #979695;
+  $btn-hover-color: #dd6395;
+  position: relative;
+  border-color: $btn-color;
+  color: $btn-color;
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-color: $btn-hover-color;
+    border-radius: $border-radius;
+    border-style: solid;
+    transition: all 0.35s;
+    content: "";
+    z-index: 1;
+  }
+  &::before {
+    width: 0;
+    height: 100%;
+    border-width: 1px 0 1px 0;
+  }
+  &::after {
+    width: 100%;
+    height: 0;
+    border-width: 0 1px 0 1px;
+  }
+  &:hover {
+    border-color: $btn-hover-color;
+    color: $btn-hover-color;
+    &::before {
+      width: 100%;
+      border-width: 1px 0 1px 0;
+    }
+    &::after {
+      height: 100%;
+      border-width: 0 1px 0 1px;
+    }
+  }
+}
+
+.btn-style701 {
+  $btn-color: #dd6395;
+  $btn-hover-color: #dd2470;
+  $size: 8px;
+  $offset: 50%;
+  position: relative;
+  border: none;
+  // border-color:$btn-color;
+  color: $btn-color;
+  span {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  &::before,
+  &::after,
+  span::before,
+  span::after {
+    width: $size;
+    height: $size;
+    position: absolute;
+    transition: all 0.5s;
+    border: 3px solid $btn-color;
+    opacity: 0;
+    content: "";
+  }
+  &::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+    transform: translate(-$offset, -$offset);
+  }
+  &::after {
+    bottom: 0;
+    left: 0;
+    border-right: none;
+    border-top: none;
+    transform: translate(-$offset, $offset);
+  }
+  span::before {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+    transform: translate($offset, -$offset);
+  }
+  span::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+    transform: translate($offset, $offset);
+  }
+  &:hover {
+    font-size: 16.5px;
+    color: $btn-hover-color;
+    &::before,
+    &::after,
+    span::before,
+    span::after {
+      opacity: 1;
+      border-color: $btn-hover-color;
+      transform: translate(0%, 0%);
+    }
+  }
+}
+
+.btn-style702 {
+  $btn-color: #716eef;
+  position: relative;
+  border-color: transparent;
+  color: #fff;
+  &::before,
+  &::after {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s;
+    content: "";
+  }
+
+  &::before {
+    width: 100%;
+    left: 0;
+    border-radius: $border-radius;
+    background-color: $btn-color;
+    z-index: -1;
+  }
+  &::after {
+    width: 0;
+    left: 50%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transform: translate(-50%, 0);
+    z-index: 1;
+  }
+  &:hover {
+    color: $btn-color;
+    &::before {
+      transform: scale(0, 1);
+    }
+    &::after {
+      width: 100%;
+      border-color: $btn-color;
+      transition-delay: 0.2s;
+    }
+  }
+}
+
+.btn-style703 {
+  $btn-color: #dd7e2a;
+  $transition-sec: 0.3;
+  position: relative;
+  background-color: $btn-color;
+  border-color: $btn-color;
+  color: #fff;
+  &::before,
+  &::after,
+  span::before,
+  span::after {
+    width: 110%;
+    height: 130%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all #{$transition-sec}s;
+    border: 0px solid $btn-color;
+    content: "";
+  }
+  &::before {
+    border-top-width: 1px;
+    transition-delay: #{$transition-sec}s;
+    transform-origin: right top;
+  }
+  &::after {
+    border-bottom-width: 1px;
+    transition-delay: #{$transition-sec * 3}s;
+    transform-origin: left bottom;
+  }
+  span {
+    &::before {
+      border-left-width: 1px;
+      transition-delay: #{$transition-sec * 2}s;
+      transform-origin: left top;
+    }
+    &::after {
+      border-right-width: 1px;
+      transform-origin: right bottom;
+    }
+  }
+  &:hover {
+    &::before,
+    &::after,
+    span::before,
+    span::after {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
+
+.btn-style900 {
+  $btn-color: rgba(221, 99, 149, 1);
+  $btn-hover-color: #dd2a73;
+  position: relative;
+  border-color: $btn-color;
+  color: rgba(221, 99, 149, 1);
+  transition-delay: 0.3s;
+  overflow: hidden;
+  &:hover {
+    transform: translateY(-0.3em);
+    border-color: $btn-hover-color;
+    color: rgba(221, 99, 149, 0);
+    transition-delay: 0s;
+    &::before {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.15s;
+    }
+  }
+  &::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    content: attr(data-hover);
+    color: $btn-color;
+    text-align: center;
+    transform: translateX(-60%);
+    transition: all 0.4s;
+    z-index: 1;
+  }
+}
+
+.btn-style901 {
+  $btn-color: #dd7e2a;
+  position: relative;
+  background-color: $btn-color;
+  border-color: $btn-color;
+  color: #fff;
+  overflow: hidden;
+  &::before {
+    width: 25px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "\f054";
+    font-family: "FontAwesome";
+    font-weight: bold;
+    font-size: 10px;
+    color: #fff;
+    text-indent: 5px;
+    border-radius: 0 50% 50% 0;
+    background-color: rgb(223 183 148 / 73%);
+    transform: translate(-20%, 0) scale(0, 1);
+    transform-origin: left center;
+    transition: all 0.25s;
+    z-index: 1;
+  }
+  &:hover {
+    text-indent: 20px;
+    &::before {
+      transform: translate(-20%, 0) scale(1, 1);
+    }
+  }
+}
+
+.btn-style902 {
+  $btn-color: #dd6395;
+  position: relative;
+  border-color: $btn-color;
+  background-color: $btn-color;
+  color: #fff;
+  overflow: hidden;
+  span[data-name="hover"] {
+    display: inline-block;
+    transition: all 0.25s;
+    transform: translate(0, 0);
+  }
+  span[data-name="me"] {
+    margin-left: 0.25em;
+    transition: all 0.25s;
+    opacity: 1;
+  }
+  .block {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -30%;
+    background-color: rgba(237, 157, 190, 0.5);
+    border-radius: 0 200% 200% 0;
+    transition: all 0.25s;
+    z-index: 1;
+    span {
+      display: block;
+      &::before {
+        content: "\f054";
+        font-family: "FontAwesome";
+      }
+    }
+  }
+  &:hover {
+    span[data-name="me"] {
+      opacity: 0;
+    }
+    span[data-name="hover"] {
+      transition-delay: 0.2s;
+      transform: translate(1.5em, 0);
+    }
+    .block {
+      transition-delay: 0.2s;
+      left: 0;
+    }
+  }
+}
+
+.btn-style903 {
+  $btn-color: #716eef;
+  position: relative;
+  border-color: $btn-color;
+  color: $btn-color;
+  &::before {
+    width: 15px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    transition: all 0.2s;
+    transition-delay: 0.1s;
+    background: $btn-color;
+    content: "";
+  }
+  &:hover {
+    background-color: $btn-color;
+    color: #fff;
+    &::before {
+      left: 100%;
+      transform: translate(-100%, -50%);
+      background-color: #fff;
+    }
+  }
+}
+
+.btn-style904 {
+  $btn-color: #dd7e2a;
+  $arrow-background: rgb(223 183 148 / 73%);
+  position: relative;
+  background-color: $btn-color;
+  border-color: $btn-color;
+  color: #fff;
+  overflow: hidden;
+  span {
+    position: relative;
+    left: -0.5em;
+    transition: all 0.25s;
+  }
+  &::before,
+  &::after {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $arrow-background;
+    transition: all 0.25s;
+    color: #fff;
+  }
+  &::before {
+    width: 25px;
+    content: "\f054";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "FontAwesome";
+    font-size: 10px;
+    font-weight: bold;
+    text-indent: 5px;
+    border-radius: 50% 0 0 50%;
+    z-index: 1;
+  }
+  &::after {
+    width: 100%;
+    transform: translate(100%, 0);
+    content: attr(data-hover);
+    text-align: left;
+    text-indent: 8px;
+  }
+  &:hover {
+    border-color: $arrow-background;
+    span {
+      left: -100%;
+    }
+    &::before {
+      right: 70%;
+    }
+    &::after {
+      right: 70%;
+    }
+  }
+}
+
+.btn-style905 {
+  $btn-color: #716eef;
+  $btn-hover-color: #3936af;
+  $btn-border-width: 5px;
+  $btn-hover-radius: 20px;
+  position: relative;
+  background-color: $btn-color;
+  border-width: $btn-border-width;
+  border-color: $btn-color;
+  color: #fff;
+  box-sizing: border-box;
+  &::before {
+    width: 120%;
+    height: 155%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: $btn-hover-radius;
+    border: 1px solid $btn-hover-color;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.1);
+    transform-origin: center center;
+    transition: all 0.25s;
+    content: "";
+  }
+  &:hover {
+    background-color: $btn-hover-color;
+    border-color: $btn-color;
+    border-style: inset;
+    border-radius: $btn-hover-radius;
+    &::before {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
+
+.btn-style906 {
+  $btn-color: #bf7b7b;
+  $btn-hover-color: #8b5252;
+  position: relative;
+  background: $btn-color;
+  border-color: $btn-color;
+  color: #fff;
+  overflow: hidden;
+  &::before {
+    width: 0;
+    height: 4.5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #562424;
+    transition: all 0.35s;
+    content: "";
+    z-index: 2;
+  }
+  &::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: $border-radius;
+    background-color: $btn-hover-color;
+    transform: translate(0, -100%);
+    transition: all 0.35s;
+    content: attr(data-hover);
+    z-index: 1;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+    &::after {
+      transform: translate(0, 0);
+    }
+  }
+}
+</style>
