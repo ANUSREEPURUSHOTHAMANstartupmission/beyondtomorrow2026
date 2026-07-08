@@ -73,11 +73,11 @@
           </li>
           
             <li on:click="{()=> menu_open = !menu_open }"  class="w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
-              <a href="/#about" class="page-scroll text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">About</a>
+              <a href="/2025#about" class="page-scroll text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">About</a>
             </li>
          
             <li on:click="{()=> menu_open = !menu_open }"  class="w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
-              <a href="/#Speakers" class="page-scroll text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">Speakers</a>
+              <a href="/2025#Speakers" class="page-scroll text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">Speakers</a>
             </li>
 
             <li on:click="{()=> menu_open = !menu_open }"  class="w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
