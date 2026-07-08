@@ -73,22 +73,22 @@
           </li>
           
             <li on:click="{()=> menu_open = !menu_open }"  class="w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
-              <a href="/#about" class=" text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">About</a>
+              <a href="/#about" class="page-scroll text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">About</a>
             </li>
          
-            <li on:click="{()=> menu_open = !menu_open }"  class="hidden w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
-              <a href="/#Speakers" class=" text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">Speakers</a>
+            <li on:click="{()=> menu_open = !menu_open }"  class=" w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
+              <a href="/#Speakers" class="page-scroll text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">Speakers</a>
             </li>
 
-            <li on:click="{()=> menu_open = !menu_open }"  class="hidden w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
-              <a href="/Schedule" class=" text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">Schedule</a>
+            <li on:click="{()=> menu_open = !menu_open }"  class=" w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
+              <a href="/#Schedule" class="page-scroll text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">Schedule</a>
             </li>
           
            <li on:click="{()=> menu_open = !menu_open }" class="w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
             <a href="/2025" target="_blank" class=" text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm">Previous Edition</a>
           </li>
             <li on:click="{()=> menu_open = !menu_open }" class="w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
-              <a href="/#contact" class=" text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm">Contact</a>
+              <a href="/#contact" class="page-scroll text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm">Contact</a>
             </li>
            <!-- <li>
             <a class="thm-btn px-3 py-2 brd-btn" href="https://forms.startupmission.in/keralastartupmission/form/RequestanInviteBeyondTomorrow/formperma/onB_zbTsiLSAygmhD1HZe7QHE1JMFWQJRLo0dPC9YbA" target="_blank" title="">Request an Invite<i class="flaticon-trajectory"></i><span></span></a>

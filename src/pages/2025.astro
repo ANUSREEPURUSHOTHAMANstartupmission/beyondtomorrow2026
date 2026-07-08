@@ -458,7 +458,7 @@ import Navbar from "../components/Navbar2025.svelte";
                         <div class="social-links d-inline-flex  text-center items-center justify-center mt-3  w-8 h-8 flex">
                             <a class="facebook rounded-circle w-8 h-8 flex items-center justify-center text-center mx-auto my-auto" href="https://www.facebook.com/keralastartupmission" title="Facebook" target="_blank"><i class="fab fa-facebook-f text-center items-center justify-center   w-8  h-8"></i></a>
                             <a class="twitter rounded-circle w-8 h-8" href="https://x.com/startup_mission" title="Twitter" target="_blank"><i class="fab fa-twitter w-8 h-8 "></i></a>
-                            <a class="instagram rounded-circle w-8 h-8" href="" title="Instagram" target="_blank"><i class="fab fa-instagram w-8 h-8"></i></a>
+                            <a class="instagram rounded-circle w-8 h-8" href="https://www.instagram.com/keralastartupmission/?hl=en" title="Instagram" target="_blank"><i class="fab fa-instagram w-8 h-8"></i></a>
                         </div>
                     </div>
                 </div>
@@ -490,6 +490,39 @@ import Navbar from "../components/Navbar2025.svelte";
 	}
   </script>
 
+
+
+  <script is:inline>
+  document.querySelectorAll("a.page-scroll").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const href = anchor.getAttribute("href");
+      const targetId = href.replace(/^\/?#/, "");
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        e.preventDefault();
+
+        targetElement.scrollIntoView({ behavior: "smooth" });
+
+        history.replaceState(null, null, window.location.pathname);
+      }
+    });
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetId = hash.replace("#", "");
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        setTimeout(() => {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+          history.replaceState(null, null, window.location.pathname);
+        }, 100);
+      }
+    }
+  });
+</script>
 
 <script is:inline>
 	function faq2(d, div_id,bt_c,bt_t) {

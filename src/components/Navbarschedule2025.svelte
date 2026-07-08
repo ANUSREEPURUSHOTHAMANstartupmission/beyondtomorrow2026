@@ -69,26 +69,26 @@
           <ul class="sm:flex md:text-xs  w-full">
            
             <li on:click="{()=> menu_open = !menu_open }"  class="w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100" >
-                <a href="/" class=" text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm">Home</a>
+                <a href="/" class="page-scroll text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm">Home</a>
               </li>
               
                 <li on:click="{()=> menu_open = !menu_open }"  class="w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
-                  <a href="/#about" class=" text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">About</a>
+                  <a href="/#about" class="page-scroll text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">About</a>
                 </li>
              
                 <li on:click="{()=> menu_open = !menu_open }"  class="w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
-                  <a href="/#Speakers" class=" text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">Speakers</a>
+                  <a href="/#Speakers" class="page-scroll text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">Speakers</a>
                 </li>
     
                 <li on:click="{()=> menu_open = !menu_open }"  class="w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
-                  <a href="/Schedule" class=" text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">Schedule</a>
+                  <a href="/Schedule" class="page-scroll text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm ">Schedule</a>
                 </li>
               
                <li on:click="{()=> menu_open = !menu_open }" class="w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
-                <a href="/2024Kochiedition" target="_blank" class=" text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm">Previous Edition</a>
+                <a href="/2024Kochiedition" target="page-scroll_blank" class=" text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm">Previous Edition</a>
               </li>
                 <li on:click="{()=> menu_open = !menu_open }" class="w-fit px-3 py-2 transform hover:text-[#e82277] transition duration-500 hover:scale-100">
-                  <a href="/#contact" class=" text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm">Contact</a>
+                  <a href="/#contact" class="page-scroll text-[#591CBC] font-bold hover:text-[#e82277] font-data uppercase text-sm">Contact</a>
                 </li>
           </ul>
         </nav>
